@@ -1,0 +1,254 @@
+/* Importando uma fonte impactante para títulos estilo Shonen */
+@import url('https://googleapis.com');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0b0c10;
+    /* Fundo com padrão de retículas/pontos clássico de mangá impresso */
+    background-image: radial-gradient(#1f2833 15%, transparent 16%), radial-gradient(#1f2833 15%, transparent 16%);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container principal simulando uma página de mangá */
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    background: #15161e;
+    border: 5px solid #000000;
+    border-radius: 0px; /* Bordas retas como quadrinhos */
+    padding: 25px;
+    box-shadow: 10px 10px 0px #ff0055; /* Sombra sólida marcante */
+    position: relative;
+}
+
+/* 💥 TÍTULO DESTAQUE ESTILO ANIME 💥 */
+header h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 52px;
+    color: #fffb00; /* Amarelo Neon */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 
+        4px 4px 0px #ff0055, 
+        -2px -2px 0px #000000, 
+        4px -2px 0px #000000, 
+        -2px 4px 0px #000000,
+        2px 8px 0px #000000;
+    transform: rotate(-2deg); /* Inclinado para dar dinâmica de ação */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: 'Permanent Marker', cursive;
+    color: #00ffff; /* Ciano chamativo */
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 0px #000;
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 32px;
+    color: #ff0055;
+    text-shadow: 2px 2px 0px #000;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Cards de Conteúdo estilo Balão de Ação */
+.card {
+    background: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border: 4px solid #000000;
+    box-shadow: 6px 6px 0px #00ffff;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Marcador de lista estilo impacto */
+.features-list li::before {
+    content: "⚡";
+    position: absolute;
+    left: 0;
+    color: #ff0055;
+}
+
+/* 🎯 BOTÕES CHAMATIVOS DE AÇÃO 🎯 */
+.menu-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    font-family: 'Bangers', cursive;
+    font-size: 24px;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 4px solid #000000;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+/* Botão Principal - Amarelo Neon */
+.btn-primary {
+    background-color: #fffb00;
+    color: #000000;
+    box-shadow: 5px 5px 0px #ff0055;
+}
+
+/* Botões Secundários - Ciano Vibrante */
+.btn-secondary {
+    background-color: #00ffff;
+    color: #000000;
+    box-shadow: 5px 5px 0px #fffb00;
+}
+
+/* Efeito de clique físico do botão */
+.btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #000;
+}
+
+/* Tela de Cursos */
+.card-curso {
+    background: #ffffff;
+    color: #000000;
+    border: 4px solid #000000;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 0px #ff0055;
+}
+
+.card-curso h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.preco {
+    font-family: 'Bangers', cursive;
+    font-size: 36px;
+    color: #ff0055;
+    margin: 10px 0;
+}
+
+.btn-buy {
+    background-color: #00ff66; /* Verde Dinâmico */
+    color: #000000;
+    width: 100%;
+    box-shadow: 4px 4px 0px #000000;
+}
+
+.btn-insta {
+    font-family: 'Bangers', cursive;
+    font-size: 22px;
+    background: #ff0055;
+    color: white;
+    display: block;
+    padding: 12px;
+    border: 4px solid #000000;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 5px 5px 0px #00ffff;
+}
+
+/* Formulários Pop-Art */
+.form-container {
+    background: #ffffff;
+}
+
+.input-group label {
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.input-group input, .input-group textarea {
+    background: #f0f0f0;
+    border: 3px solid #000000;
+    padding: 10px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    background: #fffb00; /* Campo acende em amarelo ao clicar */
+    outline: none;
+}
+
+/* Suporte e Contatos */
+.numero-tel {
+    font-family: 'Bangers', cursive;
+    font-size: 42px;
+    color: #ff0055;
+    text-shadow: 2px 2px 0px #fffb00;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.btn-whats {
+    background-color: #00ff66;
+    color: #000000;
+    box-shadow: 5px 5px 0px #000000;
+}
+
+/* Link de voltar no rodapé */
+.btn-voltar {
+    font-family: 'Permanent Marker', cursive;
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #fffb00;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-voltar:hover {
+    color: #00ffff;
+    text-shadow: 1px 1px 0px #000;
+}/* Estilo especial para a imagem de destaque do início */
+.container-imagem {
+    text-align: center;
+    margin-bottom: 25px;
+    transform: rotate(1deg); /* Inclinado de leve para casar com a estética do título */
+}
+
+.imagem-destaque {
+    width: 100%;
+    height: auto;
+    border: 5px solid #000000; /* Borda grossa de nanquim */
+    box-shadow: 8px 8px 0px #ff0055; /* Sombra sólida rosa impactante */
+    display: block;
+}
